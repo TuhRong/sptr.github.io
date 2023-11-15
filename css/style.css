@@ -13,6 +13,8 @@
     display: flex;
   
     font-family: "Montserrat", sans-serif;
+
+    color: #ffffff;
   
     align-items: center;
   
@@ -20,6 +22,11 @@
   
     margin-top: 250px;
   
+  }
+
+  body {
+    background-color: #3a3a3a;
+
   }
   
   nav {
@@ -29,10 +36,10 @@
     justify-content: space-around;
   
     align-items: center;
+
+    height: 60px;
   
-    min-height: 8vh;
-  
-    background-color: rgb(0, 108, 161);
+    background-color: rgb(41, 41, 41);
   
     font-family: "Montserrat", sans-serif;
   
@@ -43,10 +50,14 @@
     color: white;
   
     text-transform: uppercase;
+
+    position: relative;
+
+    top: 10px;
   
     letter-spacing: 5px;
   
-    font-size: 20px;
+    font-size: 24px;
   
   }
   
@@ -84,12 +95,59 @@
   
   .nav-links a:hover:not(.active) {
   
-    background-color: rgb(0, 140, 255);
+    background-color: rgb(55, 55, 55);
   
   }
   
   .nav-links li a.active {
   
-    background-color: #0084cb;
+    background-color: #797979;
   
   }
+
+  .mine {
+    align-items: center;
+  }
+  
+  .mine .message {
+    color: white;
+    font-size: 28px;
+    margin-left: 0%;
+    background: rgb(0, 120, 254);
+    position: relative;
+  }
+
+  .chat {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .messages {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  .yours {
+    align-items: flex-start;
+  }
+  
+  .yours .message {
+    color: white;
+    font-size: 16px;
+    margin-right: 0%;
+    background-color: #777777;
+    position: relative;
+  }
+  
